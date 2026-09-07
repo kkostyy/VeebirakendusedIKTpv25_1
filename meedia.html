@@ -3,7 +3,8 @@
 <head>
     <!--veebilehe tehniline info-->
     <meta charset="UTF-8">
-    <title>Konstantin veebirakenduste aluste tööd</title>
+    <meta name="author" content="Konstantin">
+    <title>Meedia | Konstantin veebirakenduste aluste tööd</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,18 +36,58 @@
 </nav>
 <!--põhisisu-->
 <main>
-    <section id="pildigalerii">
+    <div id="suurkast">
+        <section id="pildigalerii">
+            <h2>Pildigalerii</h2>
+            <div class="galerii">
+                <img src="https://picsum.photos/300/300?random=1" alt="Juhuslik pilt looduse motiiviga" width="300" height="300" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=2" alt="Juhuslik pilt linnavaatega" width="300" height="300" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=3" alt="Juhuslik pilt arhitektuuriga" width="300" height="300" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=4" alt="Juhuslik pilt maastikuga" width="300" height="300" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=5" alt="Juhuslik pilt tekstuuriga" width="300" height="300" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=6" alt="Juhuslik pilt värvilise motiiviga" width="300" height="300" loading="lazy">
+            </div>
+        </section>
 
-    </section>
-    <section id="video">
+        <section id="video">
+            <h2>Video</h2>
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="YouTube video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
-    </section>
-    <section id="kaart">
+        <section id="kaart">
+            <h2>Kaart</h2>
+            <div class="kaart-wrapper">
+                <iframe
+                    src="https://www.google.com/maps?q=Tallinna%20Tehnikak%C3%B5rgkool&output=embed"
+                    title="Google Maps asukoht"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
 
-    </section>
-    <section id="muusika">
-
-    </section>
+        <section id="muusika">
+            <h2>Muusika</h2>
+            <iframe
+                style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC?utm_source=generator"
+                width="100%"
+                height="152"
+                frameborder="0"
+                allowfullscreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy">
+            </iframe>
+        </section>
+    </div>
 </main>
 <!--jalus-->
 <footer>
