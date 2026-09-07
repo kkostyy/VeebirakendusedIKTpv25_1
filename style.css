@@ -32,7 +32,6 @@ section#Kast1{
     text-align: center;
 }
 
-/* Kast 2: Тёмно-зеленый акцент с плотной рамкой */
 section#Kast2 {
     border: 4px solid darkgreen;
     margin: 5px;
@@ -41,7 +40,6 @@ section#Kast2 {
     background-color: #e8f5e9;
 }
 
-/* Kast 3: Закругленный светлый блок */
 section#Kast3 {
     border: 2px solid #555;
     border-radius: 8px;
@@ -51,7 +49,6 @@ section#Kast3 {
     background-color: #ffffff;
 }
 
-/* Kast 4: Контрастный блок с акцентным левым бордером */
 section#Kast4 {
     border: 2px solid #ccc;
     border-left: 6px solid green;
@@ -61,7 +58,6 @@ section#Kast4 {
     background-color: #f0fdf4;
 }
 
-/* Kast 5: Пунктирный стиль */
 section#Kast5 {
     border: 3px dashed darkgreen;
     margin: 5px;
@@ -70,7 +66,6 @@ section#Kast5 {
     background-color: #fafafa;
 }
 
-/* Kast 6: Мягкий серый с тонкой рамкой */
 section#Kast6 {
     border: 2px solid #888;
     margin: 5px;
@@ -79,7 +74,6 @@ section#Kast6 {
     background-color: #f4f4f4;
 }
 
-/* Kast 7: Рамка только сверху и снизу */
 section#Kast7 {
     border: none;
     border-top: 3px solid black;
@@ -90,7 +84,6 @@ section#Kast7 {
     background-color: #eaf0ed;
 }
 
-/* Kast 8: Инверсированный тёмный блок */
 section#Kast8 {
     border: 3px solid black;
     margin: 5px;
@@ -135,4 +128,81 @@ nav{
 }
 main{
     margin-top: 1%;
+}
+
+/************ MEEDIA LEHT *****************/
+#suurkast {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 5px;
+}
+
+#suurkast section {
+    border: 2px solid darkgreen;
+    border-radius: 8px;
+    padding: 1.2rem;
+    background-color: #f4faf5;
+    text-align: center;
+}
+
+#suurkast h2 {
+    font-variant: small-caps;
+    color: darkgreen;
+    margin-top: 0;
+}
+
+/* Pildigalerii */
+.galerii {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.galerii img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+/* Video */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* Kaart */
+.kaart-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.kaart-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* Mobiilivaade */
+@media (max-width: 640px) {
+    #suurkast {
+        grid-template-columns: 1fr;
+    }
+    .galerii {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
