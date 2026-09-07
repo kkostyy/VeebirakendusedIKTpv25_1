@@ -107,6 +107,10 @@ nav ul{
 nav ul li{
     float: left;
 }
+nav ul li a:hover{
+    background-color: darkgreen;
+}
+    
 nav ul li a{
     display: block;
     color: black;
