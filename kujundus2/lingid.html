@@ -1,62 +1,96 @@
-<!DOCTYPE html> <!--deklareerimine HTML5 keel-->
+<!DOCTYPE html>
 <html lang="et">
 <head>
-  <!--veebilehe tehniline info-->
   <meta charset="UTF-8">
-  <title>Konstantin veebirakenduste aluste tööd</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Konstantin">
+  <title>Kasulikud lingid | Konstantin veebirakenduste aluste tööd</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--veebilehe sisu-->
+
 <header>
-  <h1>
-    Konstantin veebirakenduste aluste tööd
-  </h1>
+  <a href="index.html" class="logo">
+    <div class="logo-icon"></div>
+    Sharplink
+  </a>
+  <nav id="sidebar">
+    <button id="toggle-btn" class="toggle-btn">
+      <span class="arrow">›</span>
+    </button>
+    <ul>
+      <li><a href="index.html">KODU</a></li>
+      <li><a href="tutvustus.html">TUTVUSTUS</a></li>
+      <li><a href="lingid.html" class="active">KASULIKUD LINGID</a></li>
+      <li><a href="tood.html">TEHTUD TÖÖD</a></li>
+      <li><a href="meedia.html" >MEEDIA</a></li>
+    </ul>
+  </nav>
 </header>
 
-<nav>
-  <ul>
-    <li>
-      <a href="index.html">Kodu</a>
-    </li>
-    <li>
-      <a href="tutvustus.html">Tutvustus</a>
-    </li>
-    <li>
-      <a href="lingid.html">Kasulikud lingid</a>
-    </li>
-    <li>
-      <a href="tood.html">Tehtud tööd</a>
-    </li>
-    <li>
-      <a href="meedia.html">Meedia</a>
-    </li>
-  </ul>
-</nav>
-<!--põhisisu-->
 <main>
-  <section id = "Kast5">
-    <h2>
-      Kasulikud lingid
-    </h2>
-    <p>
-      <a href="https://validator.w3.org/" target="_blank">HTML validator</a>
-      <br>
-      <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS validator</a>
-      moodle, w3schools.com
-    </p>
+  <section class="hero">
+    <span class="hero-tag">Konstantin veebirakenduste aluste tööd</span>
+    <h1>Kasulikud lingid ja materjalid</h1>
+    <p class="subtitle">Arendustööriistad, õppematerjalid ja visuaalne sisu.</p>
   </section>
-  <section id = "Kast6">
+
+  <!-- Секция с валидаторами и ссылками -->
+  <div class="glass-card">
+    <h2>Kasulikud lingid</h2>
+    <p style="margin-bottom: 20px;">Valik olulisi tööriistu veebiarenduseks ja õppetööks:</p>
+
+    <a href="https://validator.w3.org/" target="_blank" class="link-item">
+      <span>HTML validator (W3C)</span>
+      <span>&rarr;</span>
+    </a>
+
+    <a href="https://jigsaw.w3.org/css-validator/" target="_blank" class="link-item">
+      <span>CSS validator (W3C)</span>
+      <span>&rarr;</span>
+    </a>
+
+    <a href="https://moodle.edu.ee/" target="_blank" class="link-item">
+      <span>Moodle õpikeskkond</span>
+      <span>&rarr;</span>
+    </a>
+
+    <a href="https://www.w3schools.com/" target="_blank" class="link-item">
+      <span>W3Schools Veebiarenduse õpetused</span>
+      <span>&rarr;</span>
+    </a>
+  </div>
+
+  <!-- Секция с картинкой -->
+  <div class="glass-card">
     <h3>Põnev pilt</h3>
-    <div>
-      <img src="Nimetu.png" alt="Põnev pilt">
+    <div style="margin-top: 16px; border-radius: 12px; overflow: hidden; border: 1px solid var(--glass-border);">
+      <img src="Nimetu.png" alt="Põnev pilt" style="width: 100%; height: auto; display: block; object-fit: cover;">
     </div>
-  </section>
+  </div>
 </main>
-<!--jalus-->
+
 <footer>
-  Konstantin leht &copy; 2026
+  <div class="footer-glow"></div>
+
+  <div class="footer-content">
+    <!-- Блок с логотипом и техническим Canvas -->
+    <div class="footer-brand-container">
+      <canvas id="techCanvas"></canvas>
+      <h1 class="brand-text">Sharplink</h1>
+    </div>
+
+    <!-- Нижняя строка -->
+    <div class="footer-bottom">
+      <span>&copy; Sharplink Inc. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
