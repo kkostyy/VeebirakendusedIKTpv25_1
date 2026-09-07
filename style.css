@@ -21,9 +21,6 @@ footer{
     background-color: green;
     font-variant: small-caps;
     border-top: 5px solid darkgreen ;
-    position: fixed;
-    left: 0;
-    bottom: 0;
 }
 section#Kast1{
     border: 1px solid black;
