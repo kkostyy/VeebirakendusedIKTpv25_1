@@ -29,7 +29,6 @@ section#Kast1{
     text-align: center;
 }
 
-/* Kast 2: Тёмно-зеленый акцент с плотной рамкой */
 section#Kast2 {
     border: 4px solid darkgreen;
     margin: 5px;
@@ -38,7 +37,6 @@ section#Kast2 {
     background-color: #e8f5e9;
 }
 
-/* Kast 3: Закругленный светлый блок */
 section#Kast3 {
     border: 2px solid #555;
     border-radius: 8px;
@@ -48,7 +46,6 @@ section#Kast3 {
     background-color: #ffffff;
 }
 
-/* Kast 4: Контрастный блок с акцентным левым бордером */
 section#Kast4 {
     border: 2px solid #ccc;
     border-left: 6px solid green;
@@ -58,7 +55,6 @@ section#Kast4 {
     background-color: #f0fdf4;
 }
 
-/* Kast 5: Пунктирный стиль */
 section#Kast5 {
     border: 3px dashed darkgreen;
     margin: 5px;
@@ -67,7 +63,6 @@ section#Kast5 {
     background-color: #fafafa;
 }
 
-/* Kast 6: Мягкий серый с тонкой рамкой */
 section#Kast6 {
     border: 2px solid #888;
     margin: 5px;
@@ -76,7 +71,6 @@ section#Kast6 {
     background-color: #f4f4f4;
 }
 
-/* Kast 7: Рамка только сверху и снизу */
 section#Kast7 {
     border: none;
     border-top: 3px solid black;
@@ -87,7 +81,6 @@ section#Kast7 {
     background-color: #eaf0ed;
 }
 
-/* Kast 8: Инверсированный тёмный блок */
 section#Kast8 {
     border: 3px solid black;
     margin: 5px;
