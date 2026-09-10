@@ -8,9 +8,9 @@
 <body>
 <h1>Tabelid</h1>
 <h2>Lihtne tabel</h2>
-<table>
+<table id="lihtne1">
     <tr>
-        <td>A</td>
+        <td class="nimia">A</td>
         <td>B</td>
     </tr>
     <tr>
@@ -18,7 +18,28 @@
         <td>D</td>
     </tr>
 </table>
-<h2>Tabel</h2>
+<h2>Tabel kus ühendatud lahtri</h2>
+<table id="keeruline1">
+    <tr>
+        <td colspan="2" class="nimia">A</td>
+    </tr>
+    <tr>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+</table>
+<h2>Veel üks tabel kus on ühendatud lahtri</h2>
+<table id="keeruline2">
+    <tr>
+        <td rowspan="2" class="nimia">A</td>
+        <td>B</td>
+    </tr>
+    <tr>
+        <td>D</td>
+    </tr>
+</table>
+git
+
 
 </body>
 </html>
