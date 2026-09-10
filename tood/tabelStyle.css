@@ -19,6 +19,14 @@ table#keeruline2{
     text-valign: top;
     border-collapse: collapse;
 
+}table#keeruline3{
+    border: 1px solid darkblue;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    text-valign: top;
+    border-collapse: collapse;
+
 }
 table#keeruline2 td{
     vertical-align: top;
