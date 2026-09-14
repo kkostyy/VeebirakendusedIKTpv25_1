@@ -1,0 +1,39 @@
+table#table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+}
+
+/* Строка 1: C */
+tr:nth-child(1) td { background-color: green; }
+
+/* Строка 2: A, D, K */
+tr:nth-child(2) td:nth-child(1) { background-color: gold; } /* A */
+tr:nth-child(2) td:nth-child(2) { background-color: indigo; } /* D */
+tr:nth-child(2) td:nth-child(3) { background-color: blue; } /* K */
+
+/* Строка 3: E, F, L, V */
+tr:nth-child(3) td:nth-child(1) { background-color: firebrick; } /* E */
+tr:nth-child(3) td:nth-child(2) { background-color: hotpink; } /* F */
+tr:nth-child(3) td:nth-child(3) { background-color: yellow; } /* L */
+tr:nth-child(3) td:nth-child(4) { background-color: aquamarine; } /* V */
+
+/* Строка 4: G, H, N */
+tr:nth-child(4) td:nth-child(1) { background-color: chartreuse; } /* G */
+tr:nth-child(4) td:nth-child(2) { background-color: olivedrab; } /* H */
+tr:nth-child(4) td:nth-child(3) { background-color: fuchsia; } /* N */
+
+/* Строка 5: I, M, O, Y */
+tr:nth-child(5) td:nth-child(1) { background-color: darkseagreen; } /* I */
+tr:nth-child(5) td:nth-child(2) { background-color: peru; } /* M */
+tr:nth-child(5) td:nth-child(3) { background-color: dimgray; } /* O */
+tr:nth-child(5) td:nth-child(4) { background-color: cornflowerblue; } /* Y */
+
+/* Строка 6: B */
+tr:nth-child(6) td { background-color: cyan; }
