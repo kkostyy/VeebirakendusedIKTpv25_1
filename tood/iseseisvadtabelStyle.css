@@ -36,4 +36,4 @@ tr:nth-child(5) td:nth-child(3) { background-color: dimgray; } /* O */
 tr:nth-child(5) td:nth-child(4) { background-color: cornflowerblue; } /* Y */
 
 /* Строка 6: B */
-tr:nth-child(6) td { background-color: cyan; }
+tr:nth-child(6) td { background-color: tomato; }
