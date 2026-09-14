@@ -1,8 +1,16 @@
+#lipud{
+    position: absolute;
+    top: 0;
+    left: 60%;
+}
 table#eesti{
     width: 330px;
     height:210px;
     border: 1px solid darkblue;
     border-spacing:0;
+    position: absolute;
+    top: 55px;
+    left: 60%;
 }
 /*pseudoelementide kasutamine*/
 #eesti tr:nth-child(1){
@@ -13,4 +21,19 @@ table#eesti{
 }
 #eesti tr:nth-child(3){
     background-color: white;
+}
+table#taani{
+    width: 330px;
+    height:210px;
+    border: 1px solid darkblue;
+    border-spacing:0;
+    position: absolute;
+    top: 300px;
+    left: 60%;
+}
+
+#taani tr:nth-child(1) td:nth-child(1),
+#taani tr:nth-child(3) td:nth-child(1){
+    background-color: red;
+    width: ;
 }
