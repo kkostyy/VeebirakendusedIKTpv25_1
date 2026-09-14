@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Map area</title>
+</head>
+<body>
+<h1>Map area kasutamine</h1>
+
+<img src="images.png" alt="Arvuti pilt" usemap="#arvuti" />
+
+<map name="arvuti">
+    <!-- 1. Monitor (Ristkülik / rect) -->
+    <area shape="rect" coords="228,62,908,458" href="monitor.html" alt="Monitor" />
+
+    <!-- 2. Lillepott (Ring / circle) -->
+    <area shape="circle" coords="160,590,46" href="plant.html" alt="Taim" />
+
+    <!-- 3. Parem kõlar (Ristkülik / rect) -->
+    <area shape="rect" coords="920,368,985,502" href="speakers.html" alt="Kõlarid" />
+
+    <!-- 4. Nutitelefon (Ristkülik / rect) -->
+    <area shape="rect" coords="258,642,375,735" href="phone.html" alt="Telefon" />
+
+    <!-- 5. Arvuti hiir (Kolmnurk / poly) -->
+    <area shape="poly" coords="1083,530, 1050,595, 1115,595" href="https://www.transpordiamet.ee/teeilmajaamad-ja-kaamerad" target="_blank" alt="Hiir" />
+</map>
+<div>See on plant!</div>
+</body>
+</html>

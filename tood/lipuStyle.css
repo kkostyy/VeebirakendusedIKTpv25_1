@@ -113,13 +113,31 @@ table#shvetsariya {
 table#shvetsariya td {
     border: 0;
 }
-
-
-table#shvetsariya tr:nth-child(2) td:nth-child(3),
-table#shvetsariya tr:nth-child(3) td:nth-child(3),
-table#shvetsariya tr:nth-child(4) td:nth-child(3),
-table#shvetsariya tr:nth-child(3) td:nth-child(2),
-table#shvetsariya tr:nth-child(3) td:nth-child(4) {
-    background-color: white;
+#shvetsariya tr:nth-child(1){
+    background-color: red;
 }
+#shvetsariya tr:nth-child(2) td:nth-child(1),
+#shvetsariya tr:nth-child(2) td:nth-child(2),
+#shvetsariya tr:nth-child(2) td:nth-child(4),
+#shvetsariya tr:nth-child(2) td:nth-child(5){
+    background-color: red;
+}
+#shvetsariya tr:nth-child(3) td:nth-child(1),
+#shvetsariya tr:nth-child(3) td:nth-child(5){
+    background-color: red;
+}
+#shvetsariya tr:nth-child(4) td:nth-child(1),
+#shvetsariya tr:nth-child(4) td:nth-child(2),
+#shvetsariya tr:nth-child(4) td:nth-child(4),
+#shvetsariya tr:nth-child(4) td:nth-child(5){
+    background-color: red;
+}
+#shvetsariya tr:nth-child(5){
+    background-color: red;
+}
+
+
+
+
+
 
