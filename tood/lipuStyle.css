@@ -9,7 +9,7 @@ table#eesti{
     border: 1px solid darkblue;
     border-spacing:0;
     position: absolute;
-    top: 55px;
+    top: 70px;
     left: 60%;
 }
 /*pseudoelementide kasutamine*/
@@ -35,5 +35,91 @@ table#taani{
 #taani tr:nth-child(1) td:nth-child(1),
 #taani tr:nth-child(3) td:nth-child(1){
     background-color: red;
-    width: ;
+    width:80px;
 }
+#taani tr:nth-child(2){
+    background-color: white;
+    height: 40px;
+}
+#taani tr:nth-child(1) td:nth-child(3),
+#taani tr:nth-child(3) td:nth-child(3){
+    background-color: red;
+    width:200px;
+}
+#taani tr:nth-child(1) td:nth-child(3),
+#taani tr:nth-child(3) td:nth-child(3){}
+
+
+#taani td{
+    border: 0;
+}
+
+table#prants{
+    width: 330px;
+    height:210px;
+    border: 1px solid darkblue;
+    border-spacing:0;
+    position: absolute;
+    top: 530px;
+    left: 60%;
+}
+#prants td:nth-child(1){
+    background-color: darkblue;
+}
+#prants td:nth-child(2){
+    background-color: white;
+}
+#prants td:nth-child(3){
+    background-color: red;
+}
+#prants td{
+    border: 0;
+}
+
+table#madagascaar{
+    width: 330px;
+    height:210px;
+    border: 1px solid darkblue;
+    border-spacing:0;
+    position: absolute;
+    top: 760px;
+    left: 60%;
+}
+
+#madagascaar tr:nth-child(1) td:nth-child(2){
+    background-color: red;
+}
+#madagascaar tr:nth-child(2){
+    background-color: green;
+}
+#madagascaar tr:nth-child(1) td:nth-child(1){
+    background-color: white;
+    width: 80px;
+}
+#madagascaar td{
+    border: 0;
+}
+
+table#shvetsariya {
+    width: 250px;
+    height:250px;
+    border: 1px solid darkblue;
+    border-spacing:0;
+    position: absolute;
+    top: 990px;
+    left: 60%;
+}
+
+table#shvetsariya td {
+    border: 0;
+}
+
+
+table#shvetsariya tr:nth-child(2) td:nth-child(3),
+table#shvetsariya tr:nth-child(3) td:nth-child(3),
+table#shvetsariya tr:nth-child(4) td:nth-child(3),
+table#shvetsariya tr:nth-child(3) td:nth-child(2),
+table#shvetsariya tr:nth-child(3) td:nth-child(4) {
+    background-color: white;
+}
+
