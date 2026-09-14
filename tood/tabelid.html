@@ -1,58 +1,132 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-    <meta charset="UTF-8">
-    <title>Tabelid</title>
-    <link rel="stylesheet" href="tabelStyle.css">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="tabelstyle.css">
 </head>
 <body>
 <h1>Tabelid</h1>
 <h2>Lihtne tabel</h2>
-<table id="lihtne1">
-    <tr>
-        <td class="nimia">A</td>
-        <td>B</td>
-    </tr>
-    <tr>
-        <td>C</td>
-        <td>D</td>
-    </tr>
+<table class="lihtne">
+  <tr>
+    <td class="nimiA">A</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>D</td>
+  </tr>
 </table>
-<h2>Tabel kus ühendatud lahtri</h2>
+
+<h2>
+  Tabel kus on ühendatud lahtrid
+</h2>
 <table id="keeruline1">
-    <tr>
-        <td colspan="2" class="nimia">A</td>
-    </tr>
-    <tr>
-        <td>C</td>
-        <td>D</td>
-    </tr>
+  <tr>
+    <td colspan="2", class="nimiA">A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>C</td>
+  </tr>
 </table>
-<h2>Veel üks tabel kus on ühendatud lahtri</h2>
+<h2>
+  Veel üks tabel
+</h2>
 <table id="keeruline2">
-    <tr>
-        <td rowspan="2" class="nimia">A</td>
-        <td>B</td>
-    </tr>
-    <tr>
-        <td>D</td>
-    </tr>
+  <tr>
+    <td rowspan="2">
+      A
+    </td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>D</td>
+  </tr>
 </table>
-<h2>Veel üks tabel kus on ühendatud lahtri</h2>
-<table id="keeruline3">
-    <tr>
-        <td rowspan="4" class="nimia">A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-    </tr>
-    <tr>
-        <td>E</td>
-        <td colspan="2" class="nimia">F</td>
-    </tr>
+<h2>
+  Hindeline tabel
+</h2>
+<table id="hindeline">
+  <tr>
+    <td rowspan= "4"class="nimiA">A</td>
+    <td colspan="3">B</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>D</td>
+    <td rowspan="3">E</td>
+  </tr>
+  <tr>
+    <td colspan="2">F</td>
+  </tr>
+  <tr>
+    <td colspan="2">G</td>
+  </tr>
 </table>
-
-
-
+<h2>
+  Kodune ülesanne
+</h2>
+<table class="lihtne">
+  <tr>
+    <td colspan="8">
+      A
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="6">
+      D
+    </td>
+    <td colspan="6">
+      E
+    </td>
+    <td rowspan="7">
+      B
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="4">
+      H
+    </td>
+    <td colspan="4">
+      I
+    </td>
+    <td rowspan="5">
+      F
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="2">
+      L
+    </td>
+    <td colspan="2">
+      M
+    </td>
+    <td rowspan="3">
+      J
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      N
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      K
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5">
+      G
+    </td>
+  </tr>
+  <tr>
+    <td colspan="7">
+      C
+    </td>
+  </tr>
+</table>
 </body>
 </html>
