@@ -27,7 +27,7 @@ tr:nth-child(3) td:nth-child(4) { background-color: aquamarine; }
 
 tr:nth-child(4) td:nth-child(1) { background-color: chartreuse; } 
 tr:nth-child(4) td:nth-child(2) { background-color: olivedrab; } 
-tr:nth-child(4) td:nth-child(3) { background-color: fuchsia; } /
+tr:nth-child(4) td:nth-child(3) { background-color: fuchsia; } 
 
 
 tr:nth-child(5) td:nth-child(1) { background-color: darkseagreen; } 
