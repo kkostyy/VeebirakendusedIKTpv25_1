@@ -6,49 +6,98 @@
 </head>
 <body>
 <h1>Muusika küsimustik</h1>
+<link rel="stylesheet" href="VormStyle.css">
 <div>HTML vormid ja nupud</div>
 <form action="#">
     <!-- c + tab komentaar -->
-    <!-- Tekstcast -->
-    <label for="nimi">Nimi:</label>
-    <input type="text" id="nimi" placeholder="Maksimilian">
-    <br>
-    <!-- ripploend või rippmenüü (выпадающий список) -->
-    <label for="stiil">Vali meeldivaim muusikakastiil</label>
-    <select name="stiil" id="stiil">
-        <option value="vali">vali...</option>
-        <option value="Hiphop">Hiphop</option>
-        <option value="kantri">kantri</option>
-        <option value="rock">rock</option>
-        <option value="funk">funk</option>
-        <option value="metal">metal</option>
-    </select>
-    <!-- radionupp -->
-    <br>
-    <input type="radio" name="platvorm" id="spotify">
-    <label for="spotify">Spotify</label>
-    <br>
-    <input type="radio" name="platvorm" id="raadio">
-    <label for="raadio">raadio</label>
-    <br>
-    <input type="radio" name="platvorm" id="vinüülplaat">
-    <label for="vinüülplaat">vinüülplaat</label>
+    <table style="border: 1px solid black;">
+        <tr>
 
-    <!-- checkbox -->
-    <fieldset>
-        <legend>Tee oma valikud - lemmik ansambel</legend>
-        <input type="checkbox" name="lemmikud" id="Radiohead">
-        <label for="Radiohead">Radiohead</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="rollingstones">
-        <label for="rollingstones">Rolling Stones</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="thesmiths">
-        <label for="thesmiths">The Smiths</label>
-        <br>
-        <input type="checkbox" name="lemmikud" id="thesmashingpumpkins">
-        <label for="thesmashingpumpkins">The Smashing Pumpkins</label>
-    </fieldset>
+            <td>
+                <!-- Tekstcast -->
+                <label for="nimi">Nimi:</label>
+
+            </td>   <!-- Tekstcast -->
+            <td>
+                <input type="text" id="nimi" placeholder="Konstantin">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="stiil">Vali meeldivaim muusikakastiil</label>
+            </td>
+
+            <!-- ripploend või rippmenüü (выпадающий список) -->
+            <td>
+                <select name="stiil" id="stiil">
+                    <option value="vali">Vali...</option>
+                    <option value="Hiphop">Hiphop</option>
+                    <option value="kantri">Kantri</option>
+                    <option value="rock">Rock</option>
+                    <option value="funk">Funk</option>
+                    <option value="metal">Metal</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <!-- radionupp -->
+            <td>
+                <br>
+                <input type="radio" name="platvorm" id="spotify">
+                <label for="spotify">Spotify</label>
+                <br>
+                <input type="radio" name="platvorm" id="raadio">
+                <label for="raadio">raadio</label>
+                <br>
+                <input type="radio" name="platvorm" id="vinüülplaat">
+                <label for="vinüülplaat">vinüülplaat</label>
+            </td>
+        </tr>
+        <tr>
+            <!-- checkbox -->
+            <td colspan="2">
+                <fieldset>
+                    <legend>Tee oma valikud - lemmik ansambel</legend>
+                    <input type="checkbox" name="lemmikud" id="Radiohead">
+                    <label for="Radiohead">Radiohead</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="rollingstones">
+                    <label for="rollingstones">Rolling Stones</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="thesmiths">
+                    <label for="thesmiths">The Smiths</label>
+                    <br>
+                    <input type="checkbox" name="lemmikud" id="thesmashingpumpkins">
+                    <label for="thesmashingpumpkins">The Smashing Pumpkins</label>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+
+
+            <td>
+                <label for="tund">
+                    Mitu tundi päevas sa kuulad muusikat
+                </label>
+            </td>
+        </tr>
+        <tr>
+
+
+            <td>0<input type="range" id="tund" min="0" max="100" value="">24</td>
+        </tr>
+        <tr>
+            <td>
+
+                <label for="stiill">Kirjuta sinu Email:</label>
+
+            </td>
+            <td>
+                <input type="text" id="stiill" placeholder="kosgaponenko@gmail.com">
+            </td>
+        </tr>
+    </table>
+    <br>
 </form>
 </body>
 </html>
