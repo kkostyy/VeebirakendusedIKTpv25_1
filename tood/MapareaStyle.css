@@ -1,6 +1,17 @@
 body {
-    margin: 20px;
-    font-family: sans-serif;
+    margin: 20px 30px 40px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #222;
+    background: #fafafa;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9d9d9;
 }
 
 .container {
@@ -9,20 +20,47 @@ body {
     gap: 30px;
 }
 
+/* NB! area koordinaadid on arvutatud selle laiuse jaoks - kui muudad laiust, tuleb koordinaadid ümber arvutada */
 .container > img[usemap="#arvuti"] {
     width: 1000px;
     height: auto;
     flex-shrink: 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 }
 
 .info-block {
     flex: 1;
+    min-width: 260px;
     text-align: left;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    padding: 18px 22px;
+}
+
+.info-block h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #1a4a7a;
+}
+
+.info-block p {
+    margin: 0 0 12px;
 }
 
 .info-block ul {
     padding-left: 20px;
     margin: 0;
+}
+
+.info-block li {
+    margin-bottom: 6px;
+}
+
+.info-block a {
+    color: #1a4a7a;
 }
 
 .info-block img {
@@ -31,9 +69,24 @@ body {
     margin-top: 15px;
     margin-bottom: 15px;
     display: block;
+    border-radius: 4px;
 }
 
 .btn-container {
     margin-top: 20px;
     text-align: left;
+}
+
+.info-block .btn {
+    display: inline-block;
+    padding: 9px 16px;
+    background: #1a4a7a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.info-block .btn:hover {
+    background: #143a60;
 }
