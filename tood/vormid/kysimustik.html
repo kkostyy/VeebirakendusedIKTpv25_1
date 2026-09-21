@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muusika küsimustik</title>
+</head>
+<body>
+<h1>Muusika küsimustik</h1>
+<div>HTML vormid ja nupud</div>
+
+<form action="#">
+    <!-- c + tab kommentaar -->
+    <!-- Tekstcast -->
+    <label for="nimi">Nimi:</label>
+    <input type="text" id="nimi" placeholder="Andrii">
+    <br>
+
+    <!-- ripploend või rippmenüü (выпадающий список) -->
+    <label for="stiil">Vali meeldivaim muusikastiil</label>
+    <select name="stiil" id="stiil">
+        <option value="vali">vali...</option>
+        <option value="Hiphop">Hiphop</option>
+        <option value="kantri">kantri</option>
+        <option value="rock">rock</option>
+        <option value="funk">funk</option>
+        <option value="metal">metal</option>
+    </select>
+    <br>
+    <strong>
+        Kuidas sa muusikat peamiselt kuulad
+    </strong>
+    <br>
+    <input type="radio" name="platvorm" id="spotify">
+    <label for="spotify">Spotify</label>
+    <br>
+    <input type="radio" name="platvorm" id="raadio">
+    <label for="raadio">raadio</label>
+    <br>
+    <input type="radio" name="platvorm" id="vinüüplaat">
+    <label for="vinüüplaat">vinüülplaat</label>
+    <!-- checkbox -->
+</form>
+</body>
+</html>
