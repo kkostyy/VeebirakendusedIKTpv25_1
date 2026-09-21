@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Kõlarid</title>
+    <link rel="stylesheet" href="MapareaStyle.css">
 </head>
 <body>
 <h1>Map area kasutamine</h1>
 
-<img src="images.png" alt="Arvuti pilt" usemap="#arvuti" />
+<div class="container">
+    <img src="images.png" alt="Arvuti pilt" usemap="#arvuti" />
 
-<map name="arvuti">
-    <area shape="rect" coords="228,62,908,458" href="monitor.html" alt="Monitor" />
-    <area shape="circle" coords="160,590,46" href="plant.html" alt="Taim" />
-    <area shape="rect" coords="920,368,985,502" href="speakers.html" alt="Kõlarid" />
-    <area shape="rect" coords="258,642,375,735" href="phone.html" alt="Telefon" />
-    <area shape="poly" coords="1083,530, 1050,595, 1115,595" href="https://www.transpordiamet.ee/teeilmajaamad-ja-kaamerad" target="_blank" alt="Hiir" />
-    <area shape="poly" coords="290,720, 705,700, 712,860, 295,885" href="keyboard.html" alt="Klaviatuur" /></map>
+    <map name="arvuti">
+        <area shape="rect" coords="114,31,454,229" href="monitor.html" alt="Monitor" />
+        <area shape="circle" coords="80,295,23" href="plant.html" alt="Taim" />
+        <area shape="rect" coords="460,184,492,251" href="speakers.html" alt="Kõlarid" />
+        <area shape="rect" coords="129,321,187,367" href="phone.html" alt="Telefon" />
+        <area shape="rect" coords="370,340,425,385" href="mouse.html" alt="Hiir" />
+        <area shape="poly" coords="145,360, 352,350, 356,430, 147,442" href="keyboard.html" alt="Klaviatuur" />
+    </map>
 
-<div>
-    <h2>Kõlarid</h2>
-    <p>
-        Monitorist kahele poole on paigutatud stiilsed hallid lauakõlarid helisignaali edastamiseks.
-        Kõlarid on heliväljundseadmed, mis võimaldavad kuulata muusikat, videote heli ning osaleda veebikoosolekutel.
-        Hea kvaliteediga helisüsteem tagab selge audiosignaali ilma kõrvaklappe kandmata, suurendades igapäevast mugavust.
-    </p>
-    <p>Loe lähemalt: <a href="https://et.wikipedia.org/wiki/K%C3%B5lar" target="_blank">Vikipeedia — Kõlar</a></p>
-    <img src="kõlar.jpg" alt="Kõlar pilt" usemap="#kõlar" />
-    <div class="btn-container">
-        <a href="maparea.html" class="btn">← Mine tagasi maparea.html lehele</a>
+    <div class="info-block">
+        <h2>Kõlarid</h2>
+        <p>
+            Monitorist kahele poole on paigutatud stiilsed hallid lauakõlarid helisignaali edastamiseks.
+            Kõlarid on heliväljundseadmed, mis võimaldavad kuulata muusikat, videote heli ning osaleda veebikoosolekutel.
+            Hea kvaliteediga helisüsteem tagab selge audiosignaali ilma kõrvaklappe kandmata, suurendades igapäevast mugavust.
+        </p>
+        <p>Loe lähemalt: <a href="https://et.wikipedia.org/wiki/K%C3%B5lar" target="_blank">Vikipeedia — Kõlar</a></p>
+        <img src="kõlar.jpg" alt="Kõlar pilt" />
+        <div class="btn-container">
+            <a href="maparea.html" class="btn">← Mine tagasi maparea.html lehele</a>
+        </div>
     </div>
 </div>
+
 </body>
 </html>

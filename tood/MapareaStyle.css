@@ -1,0 +1,39 @@
+body {
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.container > img[usemap="#arvuti"] {
+    width: 1000px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.info-block {
+    flex: 1;
+    text-align: left;
+}
+
+.info-block ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.info-block img {
+    max-width: 350px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.btn-container {
+    margin-top: 20px;
+    text-align: left;
+}
