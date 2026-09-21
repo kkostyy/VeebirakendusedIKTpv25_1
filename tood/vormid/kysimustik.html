@@ -7,16 +7,14 @@
 <body>
 <h1>Muusika küsimustik</h1>
 <div>HTML vormid ja nupud</div>
-
 <form action="#">
-    <!-- c + tab kommentaar -->
+    <!-- c + tab komentaar -->
     <!-- Tekstcast -->
     <label for="nimi">Nimi:</label>
-    <input type="text" id="nimi" placeholder="Andrii">
+    <input type="text" id="nimi" placeholder="Maksimilian">
     <br>
-
     <!-- ripploend või rippmenüü (выпадающий список) -->
-    <label for="stiil">Vali meeldivaim muusikastiil</label>
+    <label for="stiil">Vali meeldivaim muusikakastiil</label>
     <select name="stiil" id="stiil">
         <option value="vali">vali...</option>
         <option value="Hiphop">Hiphop</option>
@@ -25,10 +23,7 @@
         <option value="funk">funk</option>
         <option value="metal">metal</option>
     </select>
-    <br>
-    <strong>
-        Kuidas sa muusikat peamiselt kuulad
-    </strong>
+    <!-- radionupp -->
     <br>
     <input type="radio" name="platvorm" id="spotify">
     <label for="spotify">Spotify</label>
@@ -36,9 +31,24 @@
     <input type="radio" name="platvorm" id="raadio">
     <label for="raadio">raadio</label>
     <br>
-    <input type="radio" name="platvorm" id="vinüüplaat">
-    <label for="vinüüplaat">vinüülplaat</label>
+    <input type="radio" name="platvorm" id="vinüülplaat">
+    <label for="vinüülplaat">vinüülplaat</label>
+
     <!-- checkbox -->
+    <fieldset>
+        <legend>Tee oma valikud - lemmik ansambel</legend>
+        <input type="checkbox" name="lemmikud" id="Radiohead">
+        <label for="Radiohead">Radiohead</label>
+        <br>
+        <input type="checkbox" name="lemmikud" id="rollingstones">
+        <label for="rollingstones">Rolling Stones</label>
+        <br>
+        <input type="checkbox" name="lemmikud" id="thesmiths">
+        <label for="thesmiths">The Smiths</label>
+        <br>
+        <input type="checkbox" name="lemmikud" id="thesmashingpumpkins">
+        <label for="thesmashingpumpkins">The Smashing Pumpkins</label>
+    </fieldset>
 </form>
 </body>
 </html>
