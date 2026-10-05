@@ -93,3 +93,9 @@ input[type="text"]#stiill:focus {
     color: white;
     outline: none;
 }
+.pildi-ikoon {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    vertical-align: middle;
+}

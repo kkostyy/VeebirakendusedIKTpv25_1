@@ -7,23 +7,30 @@ function nimiLugemineKastist() {
 }
 
 function radioValik() {
-    let vastus2 = document.getElementById("vastus2");
     let spotify = document.getElementById("spotify");
     let raadio = document.getElementById("raadio");
     let vinyl = document.getElementById("vinüülplaat");
+    let pilt = document.getElementById("pilt");
 
     let valik = "";
+
     if (spotify.checked) {
         valik = spotify.value;
+        pilt.src = "https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg";
+        pilt.style.display = "inline";
     } else if (raadio.checked) {
         valik = raadio.value;
+        pilt.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYe4knKW51he5vxDFVKlPOpUBI3SodZ0p6zbdFwzTqDg&s=10";
+        pilt.style.display = "inline";
     } else if (vinyl.checked) {
         valik = vinyl.value;
+        pilt.src = "https://upload.wikimedia.org/wikipedia/commons/7/75/Vinyl_record.svg";
+        pilt.style.display = "inline";
     } else {
-        valik = "Palun tee oma valik!";
+        pilt.src = "";
+        pilt.style.display = "none";
     }
 
-    vastus2.innerHTML = "Valik on: " + valik;
     return valik;
 }
 
@@ -137,7 +144,6 @@ function naitaKoike() {
 
 function puhasta() {
     document.getElementById("vastus1").innerHTML = "";
-    document.getElementById("vastus2").innerHTML = "";
     document.getElementById("vastus3").innerHTML = "";
     document.getElementById("vastus3").style.backgroundColor = "transparent";
     document.getElementById("vastus4").innerHTML = "";
@@ -147,4 +153,11 @@ function puhasta() {
     document.getElementById("vastus6").innerHTML = "";
     document.getElementById("vastus7").innerHTML = "";
     document.getElementById("vastusKoik").innerHTML = "";
+
+    // Скрытие и очистка картинки
+    let pilt = document.getElementById("pilt");
+    if (pilt) {
+        pilt.src = "";
+        pilt.style.display = "none";
+    }
 }
