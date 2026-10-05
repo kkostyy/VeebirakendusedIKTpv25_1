@@ -67,6 +67,7 @@ function meeldivusValik() {
     const pildid = [
         'Smile.png',
         'Neutral.png',
+        'Nimetu.png',
     ];
     const Pilt = document.getElementById('Pilt');
 
@@ -84,8 +85,8 @@ function meeldivusValik() {
 
     } else {
         vastusMeeldivus.innerHTML = "";
-        Pilt.src = "";
-        Pilt.style.display = "none";
+        Pilt.src = pildid[2];
+        Pilt.style.display = "inline";
     }
     return valik;
 }
