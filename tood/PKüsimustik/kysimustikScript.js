@@ -1,3 +1,4 @@
+// Kontrollib valitud programmeerimiskeeled ja kuvab need ekraanile
 function keeledValik() {
     let vastusKeeled = document.getElementById("vastusKeeled");
 
@@ -34,6 +35,7 @@ function keeledValik() {
     return valik;
 }
 
+// Loeb kasutaja sisestatud arvamuse ja väljastab selle tekstina
 function arvamusValik() {
     let vastusArvamus = document.getElementById("vastusArvamus");
     let arvamus = document.getElementById("arvamus").value;
@@ -46,6 +48,7 @@ function arvamusValik() {
     return arvamus;
 }
 
+// Loeb nädalaste programmeerimistundide arvu ja kuvab tulemuse
 function tunnidValik() {
     let vastusTunnid = document.getElementById("vastusTunnid");
     let tunnid = document.getElementById("tunnid").value;
@@ -58,6 +61,7 @@ function tunnidValik() {
     return tunnid;
 }
 
+// Kontrollib meeldivuse valikut, kuvab vastava teksti ja muudab pilti
 function meeldivusValik() {
     let vastusMeeldivus = document.getElementById("vastusMeeldivus");
     let meeldib_jah = document.getElementById("meeldib_jah");
@@ -91,6 +95,7 @@ function meeldivusValik() {
     return valik;
 }
 
+// Loeb kasutatavate tööriistade nimekirja ja kuvab selle
 function tooriistadValik() {
     let vastusTooriistad = document.getElementById("vastusTooriistad");
     let tooriistad = document.getElementById("tooriistad").value;
@@ -103,6 +108,7 @@ function tooriistadValik() {
     return tooriistad;
 }
 
+// Kontrollib rippmenüüst valitud soovitud keelt ja väljastab selle
 function soovitudKeelValik() {
     let vastusSoovitudKeel = document.getElementById("vastusSoovitudKeel");
     let soovitudKeel = document.getElementById("soovitudKeel");
@@ -119,6 +125,7 @@ function soovitudKeelValik() {
     return valik;
 }
 
+// Käivitab kõik funktsioonid ning koondab vastused ühiseks kokkuvõtteks
 function naitaKokkuvote() {
     let vastusKoik = document.getElementById("vastusKoik");
 
@@ -138,6 +145,7 @@ function naitaKokkuvote() {
         "Soovitud keel: " + soovitudKeel;
 }
 
+// Tühjendab ankeedi sisestusväljad ning kustutab kõik kuvatud vastused
 function puhastaKoik() {
     document.getElementById("kysimustikForm").reset();
 
@@ -149,5 +157,3 @@ function puhastaKoik() {
     document.getElementById("vastusSoovitudKeel").innerHTML = "";
     document.getElementById("vastusKoik").innerHTML = "";
 }
-
-
