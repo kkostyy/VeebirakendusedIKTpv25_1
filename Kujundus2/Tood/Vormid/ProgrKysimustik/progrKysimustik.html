@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Konstantin">
+    <title>Programmeerimise küsimustik | Konstantin veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="progrKysimustikStyle.css">
+    <script src="progrKysimustikScript.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="../../../index.html" class="logo">
+        <div class="logo-icon"></div>
+        SharpVx
+    </a>
+    <nav id="sidebar">
+        <button id="toggle-btn" class="toggle-btn">
+            <span class="arrow">›</span>
+        </button>
+        <ul>
+            <li><a href="../../../index.html">KODU</a></li>
+            <li><a href="../../../tutvustus.html">TUTVUSTUS</a></li>
+            <li><a href="../../../lingid.html">KASULIKUD LINGID</a></li>
+            <li><a href="../../../tood.html" class="active">TEHTUD TÖÖD</a></li>
+            <li class="nav-group">
+                <span class="nav-group-title">Tehtud tööde lehed</span>
+                <ul class="nav-sub">
+                    <li><a href="../Maparea/maparea.html">Map area pilt</a></li>
+                    <li><a href="../Tabelid/tabelid.html">Tabelid</a></li>
+                    <li><a href="../IseseisvadTabelid/iseseisvadTabel.html">Iseseisvad tabel</a></li>
+                    <li><a href="../Kysimustik/kysimustik.html">Muusika küsimustik</a></li>
+                    <li><a href="../LehtToo/lehtToo.html">LehtToo</a></li>
+                    <li><a href="../PiltideVahetus/piltideVahetus.html">Piltide vahetus</a></li>
+                    <li><a href="progrKysimustik.html" class="active">Programmeerimise küsimustik</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../meedia.html">MEEDIA</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="../../../tood.html" class="back-link"><span>&larr;</span> Tagasi tehtud tööde juurde</a>
+
+    <section class="hero">
+        <span class="hero-tag">Tehtud tööd</span>
+        <h1>Programmeerimise küsimustik</h1>
+        <p class="subtitle">HTML-vorm koos JavaScriptiga: märkeruudud, tekstiala, numbriväli, raadionupud ja rippmenüü.</p>
+    </section>
+
+    <div class="glass-card">
+        <h2>HTML vormid ja nupud</h2>
+        <form id="kysimustikForm" action="#">
+            <table class="vorm-tabel vorm-tabel-3">
+                <tr>
+                    <td><label>Milliseid programmeerimiskeeli sa tead?</label></td>
+                    <td class="valikud">
+                        <input type="checkbox" name="keeled" id="lang_js" value="JavaScript" onchange="keeledValik()">
+                        <label for="lang_js">JavaScript</label><br>
+                        <input type="checkbox" name="keeled" id="lang_py" value="Python" onchange="keeledValik()">
+                        <label for="lang_py">Python</label><br>
+                        <input type="checkbox" name="keeled" id="lang_java" value="Java" onchange="keeledValik()">
+                        <label for="lang_java">Java</label><br>
+                        <input type="checkbox" name="keeled" id="lang_cs" value="C#" onchange="keeledValik()">
+                        <label for="lang_cs">C#</label><br>
+                        <input type="checkbox" name="keeled" id="lang_php" value="PHP" onchange="keeledValik()">
+                        <label for="lang_php">PHP</label>
+                    </td>
+                    <td><div id="vastusKeeled" class="vastus"></div></td>
+                </tr>
+                <tr>
+                    <td><label for="arvamus">Mida arvad programmeerimise õppimisest?</label></td>
+                    <td><textarea id="arvamus" rows="3" cols="25" oninput="arvamusValik()"></textarea></td>
+                    <td><div id="vastusArvamus" class="vastus"></div></td>
+                </tr>
+                <tr>
+                    <td><label for="tunnid">Mitu tundi nädalas tegeled programmeerimisega?</label></td>
+                    <td><input type="number" id="tunnid" min="0" max="168" value="0" oninput="tunnidValik()"></td>
+                    <td><div id="vastusTunnid" class="vastus"></div></td>
+                </tr>
+                <tr>
+                    <td><label>Kas sulle meeldib programmeerida?</label></td>
+                    <td class="valikud">
+                        <input type="radio" name="meeldivus" id="meeldib_jah" value="Jah" onclick="meeldivusValik()">
+                        <label for="meeldib_jah">Jah</label><br>
+                        <input type="radio" name="meeldivus" id="meeldib_ei" value="Ei" onclick="meeldivusValik()">
+                        <label for="meeldib_ei">Ei</label>
+                    </td>
+                    <td>
+                        <div id="vastusMeeldivus" class="vastus"></div>
+                        <img id="Pilt" src="Pildid/nimetu.png" alt="Pilt" class="pildi-ikoon" style="display: none;">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="tooriistad">Milliseid programmeerimisega seotud tööriistu oskad nimetada?</label></td>
+                    <td><input type="text" id="tooriistad" placeholder="nt Visual Studio Code, GitHub" oninput="tooriistadValik()"></td>
+                    <td><div id="vastusTooriistad" class="vastus"></div></td>
+                </tr>
+                <tr>
+                    <td><label for="soovitudKeel">Millist programmeerimiskeelt sooviksid kõige rohkem õppida?</label></td>
+                    <td>
+                        <select id="soovitudKeel" onchange="soovitudKeelValik()">
+                            <option value="">Vali...</option>
+                            <option value="TypeScript">TypeScript</option>
+                            <option value="C++">C++</option>
+                            <option value="Rust">Rust</option>
+                            <option value="Go">Go</option>
+                            <option value="Kotlin">Kotlin</option>
+                            <option value="Swift">Swift</option>
+                        </select>
+                    </td>
+                    <td><div id="vastusSoovitudKeel" class="vastus"></div></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="Puhasta" onclick="puhastaKoik()"></td>
+                    <td colspan="2"><input type="button" value="Saada / Näita andmed" onclick="naitaKokkuvote()"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><div id="vastusKoik"></div></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+        <div class="footer-brand-container">
+            <canvas id="techCanvas"></canvas>
+            <h1 class="brand-text">SharpVx</h1>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; SharpVx Inc. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../script.js"></script>
+</body>
+</html>

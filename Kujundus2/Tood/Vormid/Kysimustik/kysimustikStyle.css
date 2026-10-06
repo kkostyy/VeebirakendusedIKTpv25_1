@@ -1,0 +1,235 @@
+/* Muusika küsimustik — kujundus2 (tume klaasefektiga vorm) */
+
+.glass-card form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.vorm-tabel {
+    width: 100%;
+    max-width: 620px;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.glass-card .vorm-tabel td {
+    border: 0;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.06);
+    vertical-align: middle;
+}
+
+.glass-card .vorm-tabel tr td:first-child {
+    border-radius: 10px 0 0 10px;
+    width: 45%;
+}
+
+.glass-card .vorm-tabel tr td:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+.glass-card .vorm-tabel tr td[colspan="2"] {
+    border-radius: 10px;
+}
+
+label {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+fieldset {
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 12px;
+    padding: 14px 18px;
+    line-height: 2;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Tekstiväljad, tekstiala ja rippmenüü */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+textarea:hover,
+select:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #cfe0ff;
+    box-shadow: 0 0 0 3px rgba(207, 224, 255, 0.18);
+}
+
+/* Rippmenüü valikud on natiivses menüüs heledal taustal */
+select option {
+    background: #1b2540;
+    color: #fff;
+}
+
+/* Raadionupud, märkeruudud ja liugur */
+input[type="radio"],
+input[type="checkbox"],
+input[type="range"] {
+    accent-color: #cfe0ff;
+    cursor: pointer;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+input[type="range"]:hover {
+    accent-color: #ffffff;
+}
+
+.range-rida {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.range-rida input[type="range"] {
+    flex: 1;
+}
+
+.range-rida span {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Kolme veeruga tabel: küsimus | sisestus | vastus */
+.glass-card .vorm-tabel-3 {
+    max-width: 100%;
+}
+
+.glass-card .vorm-tabel-3 tr td:first-child {
+    width: 32%;
+}
+
+.glass-card .vorm-tabel-3 tr td:nth-child(2) {
+    width: 38%;
+}
+
+.glass-card .vorm-tabel tr td[colspan="3"] {
+    border-radius: 10px;
+}
+
+.valikud {
+    line-height: 2;
+}
+
+.valikud label {
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* JavaScripti vastused */
+.vastus {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #cfe0ff;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.vastus:empty {
+    padding: 0;
+}
+
+.glass-card .pildi-ikoon {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+#vastusKoik {
+    line-height: 1.8;
+}
+
+#vastusKoik:not(:empty) {
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Nupud */
+input[type="button"],
+input[type="reset"] {
+    padding: 11px 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background: rgba(255, 255, 255, 0.26);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+    .vorm-tabel, .vorm-tabel tbody, .vorm-tabel tr, .vorm-tabel td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .glass-card .vorm-tabel tr td {
+        border-radius: 0 !important;
+    }
+
+    .glass-card .vorm-tabel tr td:first-child {
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    .glass-card .vorm-tabel tr td:last-child {
+        border-radius: 0 0 10px 10px !important;
+    }
+}

@@ -1,0 +1,118 @@
+form {
+    text-align: left;
+    border-radius: 30px;
+}
+
+table, td {
+    border-collapse: collapse;
+    width: 40%;
+    padding: 1%;
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+
+label {
+    font-weight: bold;
+    color: darkblue;
+}
+
+input[type="text"]#nimi {
+    border: 1px solid steelblue;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+input[type="text"]#nimi:hover,
+input[type="text"]#nimi:focus {
+    background-color: lightskyblue;
+    border-color: midnightblue;
+    outline: none;
+}
+
+select#stiil {
+    border: 1px solid steelblue;
+    border-radius: 4px;
+    padding: 1%;
+    background-color: white;
+}
+
+select#stiil:hover,
+select#stiil:focus {
+    background-color: deepskyblue;
+    border-color: midnightblue;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    accent-color: dodgerblue;
+}
+
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+    accent-color: deepskyblue;
+}
+
+label[for="spotify"]:hover,
+label[for="raadio"]:hover,
+label[for="vinüülplaat"]:hover {
+    background-color: lightskyblue;
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: dodgerblue;
+}
+
+input[type="checkbox"]:hover,
+input[type="checkbox"]:focus {
+    accent-color: deepskyblue;
+}
+
+input[type="range"]#tund {
+    accent-color: steelblue;
+}
+
+input[type="range"]#tund:hover,
+input[type="range"]#tund:focus {
+    accent-color: deepskyblue;
+}
+
+input[type="text"]#stiill {
+    border: 1px solid steelblue;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+input[type="text"]#stiill:hover,
+input[type="text"]#stiill:focus {
+    background-color: midnightblue;
+    border-color: dodgerblue;
+    color: white;
+    outline: none;
+}
+/* Tagasi-nupp tehtud tööde lehele */
+.back-link {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 9px 16px;
+    background: #1a4a7a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    background: #143a60;
+}
+
+.pildi-ikoon {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    vertical-align: middle;
+}

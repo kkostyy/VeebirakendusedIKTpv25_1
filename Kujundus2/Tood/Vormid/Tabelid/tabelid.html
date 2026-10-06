@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Konstantin">
+    <title>Tabelid | Konstantin veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="tabelidStyle.css">
+</head>
+<body>
+
+<header>
+    <a href="../../../index.html" class="logo">
+        <div class="logo-icon"></div>
+        SharpVx
+    </a>
+    <nav id="sidebar">
+        <button id="toggle-btn" class="toggle-btn">
+            <span class="arrow">›</span>
+        </button>
+        <ul>
+            <li><a href="../../../index.html">KODU</a></li>
+            <li><a href="../../../tutvustus.html">TUTVUSTUS</a></li>
+            <li><a href="../../../lingid.html">KASULIKUD LINGID</a></li>
+            <li><a href="../../../tood.html" class="active">TEHTUD TÖÖD</a></li>
+            <li class="nav-group">
+                <span class="nav-group-title">Tehtud tööde lehed</span>
+                <ul class="nav-sub">
+                    <li><a href="../Maparea/maparea.html">Map area pilt</a></li>
+                    <li><a href="tabelid.html" class="active">Tabelid</a></li>
+                    <li><a href="../IseseisvadTabelid/iseseisvadTabel.html">Iseseisvad tabel</a></li>
+                    <li><a href="../Kysimustik/kysimustik.html">Muusika küsimustik</a></li>
+                    <li><a href="../LehtToo/lehtToo.html">LehtToo</a></li>
+                    <li><a href="../PiltideVahetus/piltideVahetus.html">Piltide vahetus</a></li>
+                    <li><a href="../ProgrKysimustik/progrKysimustik.html">Programmeerimise küsimustik</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../meedia.html">MEEDIA</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="../../../tood.html" class="back-link"><span>&larr;</span> Tagasi tehtud tööde juurde</a>
+
+    <section class="hero">
+        <span class="hero-tag">Tehtud tööd</span>
+        <h1>Tabelid</h1>
+        <p class="subtitle">HTML-tabelid: lihtsad tabelid, ühendatud lahtrid ning riigilipud tabeli abil joonistatuna.</p>
+    </section>
+
+    <div class="glass-card">
+        <h2>Lihtne tabel</h2>
+        <div class="table-wrap">
+            <table id="lihtne1">
+            <tr>
+                <td class="nimia">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Tabel kus ühendatud lahtri</h2>
+        <div class="table-wrap">
+            <table id="keeruline1">
+            <tr>
+                <td colspan="2" class="nimia">A</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Veel üks tabel kus on ühendatud lahtri</h2>
+        <div class="table-wrap">
+            <table id="keeruline2">
+            <tr>
+                <td rowspan="2" class="nimia">A</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>D</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Hindeline tabel</h2>
+        <div class="table-wrap">
+            <table id="hindeline">
+            <tr>
+                <td rowspan="4" class="nimiA">A</td>
+                <td colspan="3">B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>D</td>
+                <td rowspan="3">E</td>
+            </tr>
+            <tr>
+                <td colspan="2">F</td>
+            </tr>
+            <tr>
+                <td colspan="2">G</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Kodune ülesanne</h2>
+        <div class="table-wrap">
+            <table id="koduline">
+            <tr>
+                <td colspan="7">A</td>
+            </tr>
+            <tr>
+                <td rowspan="6">D</td>
+                <td colspan="5">E</td>
+                <td rowspan="7">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">H</td>
+                <td colspan="3">I</td>
+                <td rowspan="5">F</td>
+            </tr>
+            <tr>
+                <td rowspan="2">L</td>
+                <td>M</td>
+                <td rowspan="3">J</td>
+            </tr>
+            <tr>
+                <td>N</td>
+            </tr>
+            <tr>
+                <td colspan="2">K</td>
+            </tr>
+            <tr>
+                <td colspan="5">G</td>
+            </tr>
+            <tr>
+                <td colspan="6">C</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2 id="lipud">Lipud</h2>
+        <div class="lipud-grid">
+            <figure class="lipp">
+                <figcaption>Eesti lipp</figcaption>
+                <table id="eesti">
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+            </figure>
+
+            <figure class="lipp">
+                <figcaption>Taani lipp</figcaption>
+                <table id="taani">
+                    <tr><td></td><td></td><td></td></tr>
+                    <tr><td colspan="3"></td></tr>
+                    <tr><td></td><td></td><td></td></tr>
+                </table>
+            </figure>
+
+            <figure class="lipp">
+                <figcaption>Prantsuse lipp</figcaption>
+                <table id="prants">
+                    <tr><td></td><td></td><td></td></tr>
+                </table>
+            </figure>
+
+            <figure class="lipp">
+                <figcaption>Madagaskari lipp</figcaption>
+                <table id="madagascaar">
+                    <tr><td rowspan="2"></td><td></td></tr>
+                    <tr><td></td></tr>
+                </table>
+            </figure>
+
+            <figure class="lipp">
+                <figcaption>Šveitsi lipp</figcaption>
+                <table id="shvetsariya">
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                </table>
+            </figure>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Hindeline töö</h2>
+        <ul>
+            <li>Tuleb HTML tabeli fail Iseseisvadtabel.html nagu joonistatud, kõrgus/laius ei ole tähtis</li>
+            <li>Iga lahter peab olema värvitud (taust) pseudoelementide kaudu</li>
+            <li>Leht peab valideeruma</li>
+            <li>commit ja push ja kontrolli oma gitpages</li>
+        </ul>
+        <a href="../IseseisvadTabelid/iseseisvadTabel.html" class="link-item" style="margin-top:18px;">
+            <span>Hindeline töö (tabeli loomine näidise järgi)</span>
+            <span>&rarr;</span>
+        </a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+        <div class="footer-brand-container">
+            <canvas id="techCanvas"></canvas>
+            <h1 class="brand-text">SharpVx</h1>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; SharpVx Inc. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../script.js"></script>
+</body>
+</html>

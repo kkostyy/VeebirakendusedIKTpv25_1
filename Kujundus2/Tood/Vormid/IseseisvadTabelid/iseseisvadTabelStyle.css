@@ -1,0 +1,75 @@
+/* ==========================================================================
+   Iseseisev tabel — kujundus2
+   Ülesanne nõuab, et iga lahter oleks pseudoklassi kaudu värvitud.
+   Värvid on valitud ühest harmoonilisest paletist (jahe → soe üleminek).
+   ========================================================================== */
+
+.table-wrap {
+    display: inline-block;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.glass-card .table-wrap table#table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    margin: 0;
+}
+
+.glass-card .table-wrap table#table td {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.45);
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.glass-card .table-wrap table#table td:hover {
+    filter: brightness(1.25);
+}
+
+/* Välisääris tuleb ümbritsevalt diivilt */
+#table tr:first-child td { border-top: 0; }
+#table tr:last-child td  { border-bottom: 0; }
+#table td:first-child    { border-left: 0; }
+#table td:last-child     { border-right: 0; }
+
+/* ---------- Iga lahter oma värviga (pseudoklassid) ---------- */
+
+/* 1. rida — ülemine riba */
+#table tr:nth-child(1) td { background-color: #1e6f5c; }
+
+/* 2. rida */
+#table tr:nth-child(2) td:nth-child(1) { background-color: #2a4f83; }
+#table tr:nth-child(2) td:nth-child(2) { background-color: #3d6fb4; }
+#table tr:nth-child(2) td:nth-child(3) { background-color: #5b4b9e; }
+
+/* 3. rida */
+#table tr:nth-child(3) td:nth-child(1) { background-color: #4a7fc1; }
+#table tr:nth-child(3) td:nth-child(2) { background-color: #6c63b5; }
+#table tr:nth-child(3) td:nth-child(3) { background-color: #8a5fa8; }
+#table tr:nth-child(3) td:nth-child(4) { background-color: #a85f92; }
+
+/* 4. rida */
+#table tr:nth-child(4) td:nth-child(1) { background-color: #2f8f7a; }
+#table tr:nth-child(4) td:nth-child(2) { background-color: #4f9e6a; }
+#table tr:nth-child(4) td:nth-child(3) { background-color: #b86a72; }
+
+/* 5. rida */
+#table tr:nth-child(5) td:nth-child(1) { background-color: #7aa653; }
+#table tr:nth-child(5) td:nth-child(2) { background-color: #c08a4a; }
+#table tr:nth-child(5) td:nth-child(3) { background-color: #55606f; }
+#table tr:nth-child(5) td:nth-child(4) { background-color: #4a86c4; }
+
+/* 6. rida — alumine riba */
+#table tr:nth-child(6) td { background-color: #c05a4a; }
+
+/* Tagasi-nupp tuleb ühisest style.css failist */

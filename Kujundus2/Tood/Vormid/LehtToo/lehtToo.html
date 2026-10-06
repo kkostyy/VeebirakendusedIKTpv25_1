@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Konstantin">
+    <title>LehtToo | Konstantin veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="lehtTooStyle.css">
+</head>
+<body>
+
+<header>
+    <a href="../../../index.html" class="logo">
+        <div class="logo-icon"></div>
+        SharpVx
+    </a>
+    <nav id="sidebar">
+        <button id="toggle-btn" class="toggle-btn">
+            <span class="arrow">›</span>
+        </button>
+        <ul>
+            <li><a href="../../../index.html">KODU</a></li>
+            <li><a href="../../../tutvustus.html">TUTVUSTUS</a></li>
+            <li><a href="../../../lingid.html">KASULIKUD LINGID</a></li>
+            <li><a href="../../../tood.html" class="active">TEHTUD TÖÖD</a></li>
+            <li class="nav-group">
+                <span class="nav-group-title">Tehtud tööde lehed</span>
+                <ul class="nav-sub">
+                    <li><a href="../Maparea/maparea.html">Map area pilt</a></li>
+                    <li><a href="../Tabelid/tabelid.html">Tabelid</a></li>
+                    <li><a href="../IseseisvadTabelid/iseseisvadTabel.html">Iseseisvad tabel</a></li>
+                    <li><a href="../Kysimustik/kysimustik.html">Muusika küsimustik</a></li>
+                    <li><a href="lehtToo.html" class="active">LehtToo</a></li>
+                    <li><a href="../PiltideVahetus/piltideVahetus.html">Piltide vahetus</a></li>
+                    <li><a href="../ProgrKysimustik/progrKysimustik.html">Programmeerimise küsimustik</a></li>
+                </ul>
+            </li>
+            <li><a href="../../../meedia.html">MEEDIA</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <a href="../../../tood.html" class="back-link"><span>&larr;</span> Tagasi tehtud tööde juurde</a>
+
+    <section class="hero">
+        <span class="hero-tag">Tehtud tööd</span>
+        <h1>LehtToo</h1>
+        <p class="subtitle">HTML põhielemendid: pealkirjad, lõigud, reavahetus, lingid, tabelid ja loetelud.</p>
+    </section>
+
+    <div class="glass-card">
+        <h2>Pealkiri</h2>
+        <p>Tekst lõigu jaoks</p>
+        <p>teksti alumine osa lõigu nt.</p>
+        <p>
+            See on reavahetuse alla käiv teema.<br>
+            Rida on vahetunud.
+        </p>
+        <p><a href="#">Neti</a></p>
+    </div>
+
+    <div class="glass-card">
+        <h2>Tabelid</h2>
+        <div class="leht-tabelid">
+            <table>
+                <tr>
+                    <td>Esimene</td>
+                    <td></td>
+                    <td>Kolmas</td>
+                </tr>
+                <tr>
+                    <td>Neljas</td>
+                    <td>Viies</td>
+                    <td>Kuues</td>
+                </tr>
+                <tr>
+                    <td>Seitsmes</td>
+                    <td colspan="2"> </td>
+                </tr>
+            </table>
+
+            <table class="numbrid">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+
+            <p>
+                1 2 3<br>
+                4 5 6<br>
+                7 8 9
+            </p>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <h2>Loetelud</h2>
+        <ul class="ruut">
+            <li>ruudukujuline asi</li>
+            <li>ruudukujuline asi</li>
+            <li>ruudukujuline asi</li>
+        </ul>
+
+        <ul>
+            <li>ebakorrapärane loetelu
+                <ul class="ring">
+                    <li>pesastatud</li>
+                    <li>pesastatud</li>
+                    <li>pesastatud</li>
+                </ul>
+            </li>
+            <li>ebakorrapärane loetelu</li>
+            <li>ebakorrapärane loetelu</li>
+        </ul>
+
+        <ol type="I">
+            <li>loetelu</li>
+            <li>loetelu</li>
+            <li>loetelu</li>
+        </ol>
+    </div>
+
+    <div class="glass-card">
+        <h2>Pealkiri 2</h2>
+        <ol type="A">
+            <li>loetelu</li>
+            <li>loetelu</li>
+            <li>loetelu</li>
+        </ol>
+
+        <h3>pealkiri</h3>
+        <h4>pealkiri</h4>
+        <h5>pealkiri</h5>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+        <div class="footer-brand-container">
+            <canvas id="techCanvas"></canvas>
+            <h1 class="brand-text">SharpVx</h1>
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; SharpVx Inc. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../../../script.js"></script>
+</body>
+</html>

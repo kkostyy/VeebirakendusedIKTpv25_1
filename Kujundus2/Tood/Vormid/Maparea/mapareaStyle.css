@@ -1,0 +1,35 @@
+/* Map area tööleht — kujundus2 (klaasefektiga tume teema) */
+
+/* Pildi ümbris: kui ekraan on kitsam kui pilt, saab pilti kerida
+   ilma et area koordinaadid paigast läheksid. */
+.map-shell {
+    margin-top: 18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-radius: 14px;
+}
+
+/* NB! area koordinaadid on arvutatud täpselt selle laiuse jaoks —
+   kui muudad laiust, tuleb koordinaadid ümber arvutada. */
+.map-shell img[usemap="#arvuti"] {
+    width: 1000px;
+    max-width: none;
+    height: auto;
+    display: block;
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 10px 34px rgba(0, 0, 0, 0.28);
+}
+
+/* Pildil olevad klikitavad alad ei tohi hover'il suureneda */
+.map-shell img[usemap="#arvuti"]:hover {
+    transform: none;
+}
+
+/* Seadme lähipilt alamlehtedel */
+.glass-card img.detail-img {
+    width: auto;
+    max-width: 360px;
+    margin-top: 18px;
+}

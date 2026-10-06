@@ -1,0 +1,57 @@
+/* LehtToo — kujundus2 (HTML põhielemendid klaasefektiga kaartides) */
+
+.glass-card p + p {
+    margin-top: 10px;
+}
+
+.leht-tabelid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 28px;
+    margin-top: 10px;
+}
+
+.glass-card .leht-tabelid table td {
+    min-width: 70px;
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.glass-card .leht-tabelid table.numbrid td {
+    min-width: 0;
+    padding: 18px 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.glass-card .leht-tabelid p {
+    font-weight: 600;
+    letter-spacing: 6px;
+}
+
+.glass-card ul.ruut {
+    list-style-type: square;
+}
+
+.glass-card ul ul.ring {
+    list-style-type: disc;
+    margin-top: 4px;
+}
+
+.glass-card ol {
+    margin: 14px 0 0 24px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+}
+
+.glass-card h4,
+.glass-card h5 {
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.glass-card h3 {
+    margin-top: 24px;
+}

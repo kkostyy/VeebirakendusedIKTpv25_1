@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Konstantin">
+    <title>Meedia | Konstantin veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        SharpVx
+    </a>
+    <nav id="sidebar">
+    <button id="toggle-btn" class="toggle-btn">
+      <span class="arrow">›</span>
+    </button>
+    <ul>
+        <li><a href="index.html">KODU</a></li>
+        <li><a href="tutvustus.html">TUTVUSTUS</a></li>
+        <li><a href="lingid.html">KASULIKUD LINGID</a></li>
+        <li><a href="tood.html">TEHTUD TÖÖD</a></li>
+            <li class="nav-group">
+                <span class="nav-group-title">Tehtud tööde lehed</span>
+                <ul class="nav-sub">
+                    <li><a href="Tood/Vormid/Maparea/maparea.html">Map area pilt</a></li>
+                    <li><a href="Tood/Vormid/Tabelid/tabelid.html">Tabelid</a></li>
+                    <li><a href="Tood/Vormid/IseseisvadTabelid/iseseisvadTabel.html">Iseseisvad tabel</a></li>
+                    <li><a href="Tood/Vormid/Kysimustik/kysimustik.html">Muusika küsimustik</a></li>
+                    <li><a href="Tood/Vormid/LehtToo/lehtToo.html">LehtToo</a></li>
+                    <li><a href="Tood/Vormid/PiltideVahetus/piltideVahetus.html">Piltide vahetus</a></li>
+                    <li><a href="Tood/Vormid/ProgrKysimustik/progrKysimustik.html">Programmeerimise küsimustik</a></li>
+                </ul>
+            </li>
+        <li><a href="meedia.html" class="active">MEEDIA</a></li>
+    </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <span class="hero-tag">Konstantin veebirakenduste aluste tööd</span>
+        <h1>Meedia ja multimeedia</h1>
+        <p class="subtitle">Pildigalerii, integreeritud video, kaart ja muusika ühes kohas.</p>
+    </section>
+
+    <!-- Pildid ja Muusika -->
+    <div class="grid-2">
+        <div class="glass-card">
+            <h2>Pildigalerii</h2>
+            <div class="galerii">
+                <img src="https://picsum.photos/300/300?random=1" alt="Juhuslik pilt looduse motiiviga" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=2" alt="Juhuslik pilt linnavaatega" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=3" alt="Juhuslik pilt arhitektuuriga" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=4" alt="Juhuslik pilt maastikuga" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=5" alt="Juhuslik pilt tekstuuriga" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=6" alt="Juhuslik pilt värvilise motiiviga" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=7" alt="Juhuslik pilt abstraktne" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=8" alt="Juhuslik pilt disain" loading="lazy">
+                <img src="https://picsum.photos/300/300?random=9" alt="Juhuslik pilt kunst" loading="lazy">
+            </div>
+        </div>
+
+        <div class="glass-card" style="padding: 20px;">
+            <h2>Muusika</h2>
+            <div class="spotify-wrapper">
+                <iframe
+                        src="https://open.spotify.com/embed/playlist/7hy6PZe7TBX9S6jwAf1Gp1?si=9a8e3a9f5c7c4769"
+                        width="100%"
+                        height="152"
+                        allowfullscreen
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kaart ja Video -->
+    <div class="grid-2">
+        <div class="glass-card">
+            <h2>Kaart</h2>
+            <div class="kaart-wrapper">
+                <iframe
+                        src="https://www.google.com/maps?q=47.5342205,35.8991246&output=embed"
+                        title="Google Maps asukoht"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2>Video</h2>
+            <div class="video-wrapper">
+                <iframe
+                        src="https://www.youtube.com/embed/tA-lQ79ryCM"
+                        title="YouTube video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+        <!-- Блок с логотипом и техническим Canvas -->
+        <div class="footer-brand-container">
+            <canvas id="techCanvas"></canvas>
+            <h1 class="brand-text">SharpVx</h1>
+        </div>
+
+        <!-- Нижняя строка -->
+        <div class="footer-bottom">
+            <span>&copy; SharpVx Inc. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

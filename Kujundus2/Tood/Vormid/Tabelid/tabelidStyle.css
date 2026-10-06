@@ -1,0 +1,175 @@
+/* ==========================================================================
+   Tabelite tööleht — kujundus2
+   Tumeda klaasteema värvipalett + pehmelt ümarad nurgad
+   ========================================================================== */
+
+:root {
+    --cell-bg: rgba(255, 255, 255, 0.07);
+    --cell-line: rgba(255, 255, 255, 0.22);
+    --accent-1: #3d6fb4;   /* esiletõstetud lahter */
+    --accent-2: #5b4b9e;   /* teine aktsent */
+    --radius-lg: 16px;
+}
+
+/* ---------- Ümar raam tabeli ümber ----------
+   border-collapse: collapse ei austa border-radius'it,
+   seega ümardame ümbritseva diivi ja lõikame ülearuse ära. */
+.table-wrap {
+    display: inline-block;
+    margin-top: 18px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(150deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 100%);
+    box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* ---------- Õppetabelid ---------- */
+.glass-card .table-wrap table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0;
+    background: transparent;
+}
+
+.glass-card .table-wrap table#lihtne1    { width: 260px; height: 120px; }
+.glass-card .table-wrap table#keeruline1 { width: 320px; height: 200px; }
+.glass-card .table-wrap table#keeruline2 { width: 200px; height: 300px; }
+.glass-card .table-wrap table#hindeline  { width: 340px; height: 300px; }
+.glass-card .table-wrap table#koduline   { width: 560px; max-width: 100%; height: 380px; }
+
+.glass-card .table-wrap td {
+    border: 1px solid var(--cell-line);
+    background: var(--cell-bg);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    transition: background 0.25s ease;
+}
+
+/* Välimine ääris tuleb juba .table-wrap'ilt */
+.glass-card .table-wrap tr:first-child td { border-top: 0; }
+.glass-card .table-wrap tr:last-child td  { border-bottom: 0; }
+.glass-card .table-wrap td:first-child    { border-left: 0; }
+.glass-card .table-wrap td:last-child     { border-right: 0; }
+
+.glass-card .table-wrap td:hover {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+/* Esiletõstetud (ühendatud) lahtrid */
+.glass-card .table-wrap td.nimia,
+.glass-card .table-wrap td.nimiA {
+    background: linear-gradient(140deg, var(--accent-1) 0%, #2a4f83 100%);
+}
+
+.glass-card .table-wrap table#keeruline2 td {
+    background: linear-gradient(140deg, var(--accent-2) 0%, #3a2f6b 100%);
+    vertical-align: top;
+}
+
+/* Suur kodune tabel: vaheldumisi toonid, et struktuur oleks loetav */
+.glass-card .table-wrap table#koduline td[rowspan],
+.glass-card .table-wrap table#hindeline td[rowspan] {
+    background: rgba(61, 111, 180, 0.35);
+}
+
+.glass-card .table-wrap table#koduline td[colspan],
+.glass-card .table-wrap table#hindeline td[colspan] {
+    background: rgba(91, 75, 158, 0.3);
+}
+
+/* ---------- Lipud ----------
+   NB! Lahtrid on tühjad, seega peab iga lahtri laius ja kõrgus olema
+   CSS-is kirjas — muidu jagab brauser ruumi suvaliselt ja osa
+   värviribasid kaob kokku (kõrgus/laius 0). */
+
+.lipud-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 22px;
+}
+
+/* Pealkiri on tabelist väljaspool, et ümar nurk seda ei lõikaks */
+.lipp {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lipp figcaption {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.lipp table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lipp table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+.glass-card .lipp td {
+    border: 0;
+    padding: 0;
+    background: none;
+}
+
+/* Eesti — 3 võrdset riba, 11:7 */
+table#eesti { width: 264px; height: 168px; }
+#eesti td { width: 264px; height: 56px; }
+#eesti tr:nth-child(1) td { background-color: #0072ce; }
+#eesti tr:nth-child(2) td { background-color: #000000; }
+#eesti tr:nth-child(3) td { background-color: #ffffff; }
+
+/* Taani — valge rist punasel: veerud 68/30/166, read 69/30/69 */
+table#taani { width: 264px; height: 168px; }
+#taani tr:nth-child(1) td, #taani tr:nth-child(3) td { height: 69px; }
+#taani tr:nth-child(2) td { height: 30px; }
+#taani td:nth-child(1) { width: 68px; }
+#taani td:nth-child(2) { width: 30px; }
+#taani td:nth-child(3) { width: 166px; }
+/* Keskmine rida on üks colspan=3 lahter — laius tuleb tabelist */
+#taani tr:nth-child(2) td { width: auto; }
+#taani tr:nth-child(1) td, #taani tr:nth-child(3) td { background-color: #c8102e; }
+#taani tr:nth-child(1) td:nth-child(2),
+#taani tr:nth-child(3) td:nth-child(2) { background-color: #ffffff; }
+#taani tr:nth-child(2) td { background-color: #ffffff; }
+
+/* Prantsusmaa — 3 võrdset püstist riba, 3:2 */
+table#prants { width: 264px; height: 176px; }
+#prants td { width: 88px; height: 176px; }
+#prants td:nth-child(1) { background-color: #0055a4; }
+#prants td:nth-child(2) { background-color: #ffffff; }
+#prants td:nth-child(3) { background-color: #ef4135; }
+
+/* Madagaskar — valge veerg vasakul, punane ja roheline paremal */
+table#madagascaar { width: 264px; height: 176px; }
+#madagascaar tr:nth-child(1) td:nth-child(1) { width: 88px; height: 176px; background-color: #ffffff; }
+#madagascaar tr:nth-child(1) td:nth-child(2) { width: 176px; height: 88px; background-color: #fc3d32; }
+#madagascaar tr:nth-child(2) td { width: 176px; height: 88px; background-color: #007e3a; }
+
+/* Šveits — ruut 5x5, valge rist punasel */
+table#shvetsariya { width: 200px; height: 200px; }
+#shvetsariya td { width: 40px; height: 40px; background-color: #d52b1e; }
+#shvetsariya tr:nth-child(2) td:nth-child(3),
+#shvetsariya tr:nth-child(3) td:nth-child(2),
+#shvetsariya tr:nth-child(3) td:nth-child(3),
+#shvetsariya tr:nth-child(3) td:nth-child(4),
+#shvetsariya tr:nth-child(4) td:nth-child(3) { background-color: #ffffff; }

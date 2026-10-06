@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Konstantin">
+    <title>Tehtud tööd | Konstantin veebirakenduste aluste tööd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">
+        <div class="logo-icon"></div>
+        SharpVx
+    </a>
+    <nav id="sidebar">
+    <button id="toggle-btn" class="toggle-btn">
+        <span class="arrow">›</span>
+    </button>
+    <ul>
+        <li><a href="index.html">KODU</a></li>
+        <li><a href="tutvustus.html">TUTVUSTUS</a></li>
+        <li><a href="lingid.html">KASULIKUD LINGID</a></li>
+        <li><a href="tood.html" class="active">TEHTUD TÖÖD</a></li>
+        <li class="nav-group">
+            <span class="nav-group-title">Tehtud tööde lehed</span>
+            <ul class="nav-sub">
+                <li><a href="Tood/Vormid/Maparea/maparea.html">Map area pilt</a></li>
+                <li><a href="Tood/Vormid/Tabelid/tabelid.html">Tabelid</a></li>
+                <li><a href="Tood/Vormid/IseseisvadTabelid/iseseisvadTabel.html">Iseseisvad tabel</a></li>
+                <li><a href="Tood/Vormid/Kysimustik/kysimustik.html">Muusika küsimustik</a></li>
+                <li><a href="Tood/Vormid/LehtToo/lehtToo.html">LehtToo</a></li>
+                <li><a href="Tood/Vormid/PiltideVahetus/piltideVahetus.html">Piltide vahetus</a></li>
+                <li><a href="Tood/Vormid/ProgrKysimustik/progrKysimustik.html">Programmeerimise küsimustik</a></li>
+            </ul>
+        </li>
+        <li><a href="meedia.html" >MEEDIA</a></li>
+    </ul>
+</nav>
+</header>
+
+<main>
+    <section class="hero">
+        <span class="hero-tag">Konstantin veebirakenduste aluste tööd</span>
+        <h1>Tehtud tööd ja praktika</h1>
+        <p class="subtitle">Ülevaade valminud kujundustest ja veebiprojektidest.</p>
+    </section>
+
+    <!-- Секция с проектами (Kast7) -->
+    <div class="glass-card">
+        <h2>Tehtud tööd</h2>
+        <p style="margin-bottom: 20px;">Valik valminud veebidisainidest ja kujundusversioonidest:</p>
+
+        <a href="../Kujundus1/index.html" class="link-item">
+            <span>Esimene veebilehe kujundus</span>
+            <span>&rarr;</span>
+        </a>
+
+        <a href="Tood/Vormid/Tabelid/tabelid.html" class="link-item">
+            <span>Tabelid</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/IseseisvadTabelid/iseseisvadTabel.html" class="link-item">
+            <span>Iseseisvad Tabel</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/Maparea/maparea.html" class="link-item">
+            <span>Map area pilt</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/Kysimustik/kysimustik.html" class="link-item">
+            <span>Muusika küsimustik</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/LehtToo/lehtToo.html" class="link-item">
+            <span>LehtToo</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/PiltideVahetus/piltideVahetus.html" class="link-item">
+            <span>Piltide vahetus</span>
+            <span>&rarr;</span>
+        </a>
+        <a href="Tood/Vormid/ProgrKysimustik/progrKysimustik.html" class="link-item">
+            <span>Programmeerimise küsimustik</span>
+            <span>&rarr;</span>
+        </a>
+    </div>
+
+    <!-- Секция с картинкой (Kast8) -->
+    <div class="glass-card">
+        <h3>Põnev pilt</h3>
+        <div style="margin-top: 16px; border-radius: 12px; overflow: hidden; border: 1px solid var(--glass-border);">
+            <img src="Pildid/nimetu.png" alt="Põnev pilt" style="width: 100%; height: auto; display: block; object-fit: cover;">
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-glow"></div>
+
+    <div class="footer-content">
+        <!-- Блок с логотипом и техническим Canvas -->
+        <div class="footer-brand-container">
+            <canvas id="techCanvas"></canvas>
+            <h1 class="brand-text">SharpVx</h1>
+        </div>
+
+        <!-- Нижняя строка -->
+        <div class="footer-bottom">
+            <span>&copy; SharpVx Inc. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
