@@ -1,0 +1,24 @@
+img#randomPilt {
+    border: 2px solid lawngreen;
+    border-radius: 50%;
+    width: 300px;
+}
+
+input[type=button] {
+    border: 2px solid lawngreen;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+div#vastus {
+    border: 2px solid lawngreen;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+    padding: 5px;
+    background-color: greenyellow;
+}
+
+#valitudPilt {
+    width: 300px;
+}
