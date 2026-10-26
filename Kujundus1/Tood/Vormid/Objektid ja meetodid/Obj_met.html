@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <title>Objektid ja meetodid</title>
-    <script src="Obj_met.js"></script>
+    <link rel="stylesheet" href="Obj_metStyle.css">
+    <!-- defer: skript käivitub alles siis, kui HTML on laetud, muidu getElementById annab null -->
+    <script src="Obj_met.js" defer></script>
 </head>
 <body>
+<h1>JS: Objektid ja meetodid</h1>
+<p>Kõik tulemused on näha nii siin lehel kui ka konsoolis (F12 → Console).</p>
 
+<section id="yld">
+    <section class="kast">
+        <h2>1. Auto objekt</h2>
+        <div id="vastus1"></div>
+    </section>
+
+    <section class="kast">
+        <h2>2. Autode massiiv</h2>
+        <div id="vastus2"></div>
+    </section>
+
+    <section class="kast">
+        <h2>3. Massiivi meetodid</h2>
+        <div id="vastus3"></div>
+    </section>
+</section>
+
+<p><a href="../Raamatukogu/raamatukogu.html">Ülesanne: raamat ja raamatukogu →</a></p>
 </body>
 </html>
