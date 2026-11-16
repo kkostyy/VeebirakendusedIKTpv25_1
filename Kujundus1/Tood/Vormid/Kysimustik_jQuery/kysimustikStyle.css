@@ -116,37 +116,3 @@ input[type="text"]#stiill:focus {
     border-radius: 8px;
     vertical-align: middle;
 }
-
-/************ jQuery valideerimine *****************/
-/* hoiatustekst välja all */
-.viga {
-    color: red;
-    font-weight: bold;
-    font-size: 13px;
-    margin-top: 4px;
-}
-
-/* vigane väli punase raamiga */
-input.vigane,
-select.vigane,
-textarea.vigane {
-    border: 2px solid red !important;
-    background-color: #ffe6e6;
-}
-
-/* raadionupud ja checkboxid punaseks */
-input[type="radio"].vigane,
-input[type="checkbox"].vigane {
-    outline: 2px solid red;
-    accent-color: red;
-}
-
-/* koondteade vormi kohal */
-#koondviga {
-    margin: 10px 0;
-    color: red;
-    font-weight: bold;
-}
-#koondviga.korras {
-    color: green;
-}

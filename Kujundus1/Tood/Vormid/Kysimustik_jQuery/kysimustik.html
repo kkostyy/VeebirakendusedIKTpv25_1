@@ -2,21 +2,16 @@
 <html lang="et">
 <head>
     <meta charset="UTF-8">
-    <title>Muusika küsimustik – jQuery valideerimine</title>
+    <title>Muusika küsimustik</title>
     <link rel="stylesheet" href="kysimustikStyle.css">
-    <!--jQuery CDN-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="kysimustikScript.js" defer></script>
-    <!--jQuery valideerimine-->
-    <script src="valideerimine.js" defer></script>
 </head>
 <body>
 <a href="../../../tood.html" class="back-link">&larr; Tagasi tehtud tööde juurde</a>
 <h1>Muusika küsimustik</h1>
-<div>jQuery valideerimine: täida kõik väljad ja vajuta „Saada / Näita andmed“</div>
-<div id="koondviga"></div>
+<div>HTML vormid ja nupud</div>
 
-<form action="#" id="ankeet">
+<form action="#">
     <table style="border: 1px solid black;">
         <tr>
             <td>
@@ -144,10 +139,10 @@
         </tr>
         <tr>
             <td>
-                <input type="reset" value="Puhasta" id="puhasta">
+                <input type="reset" value="Puhasta" onclick="puhasta()">
             </td>
             <td colspan="2">
-                <input type="button" value="Saada / Näita andmed" id="saada">
+                <input type="button" value="Saada / Näita andmed" onclick="naitaKoike()">
             </td>
         </tr>
         <tr>
