@@ -38,17 +38,14 @@
                 $('#paremale').show();
             });
 
-            // toggle - üks nupp peidab ja näitab teksti
             $('#toggle').on('click', function () {
                 $('#tekst').toggle(500);
             });
 
-            // UUS EFEKT 1: slideToggle - pildikast sulgub ja avaneb nagu ruloo
             $('#slaid').on('click', function () {
                 $('#pildiKast').slideToggle(800);
             });
 
-            // UUS EFEKT 2: fadeTo + css - pealkiri muutub hiirega peale minnes
             $('#Kast1 h2').on('mouseenter', function () {
                 $(this).css('color', 'darkgreen').fadeTo(300, 0.5);
             }).on('mouseleave', function () {
@@ -78,23 +75,23 @@
 </header>
 
 <nav>
- <ul>
-     <li>
-         <a href="index.html">Kodu</a>
-     </li>
-     <li>
-         <a href="tutvustus.html">Tutvustus</a>
-     </li>
-     <li>
-         <a href="lingid.html">Kasulikud lingid</a>
-     </li>
-     <li>
-         <a href="tood.html">Tehtud tööd</a>
-     </li>
-     <li>
-         <a href="meedia.html">Meedia</a>
-     </li>
- </ul>
+    <ul>
+        <li>
+            <a href="index.html">Kodu</a>
+        </li>
+        <li>
+            <a href="tutvustus.html">Tutvustus</a>
+        </li>
+        <li>
+            <a href="lingid.html">Kasulikud lingid</a>
+        </li>
+        <li>
+            <a href="tood.html">Tehtud tööd</a>
+        </li>
+        <li>
+            <a href="meedia.html">Meedia</a>
+        </li>
+    </ul>
 </nav>
 <!--põhisisu-->
 <main>
@@ -111,7 +108,7 @@
             Tere tulemast!
         </h2>
         <p id="tekst">See index leht mis on tehtus 1. Veebirakenduste tunnis!
-        Palun vajuta teise lingi peale ning kontrolli et sisu on täidetud
+            Palun vajuta teise lingi peale ning kontrolli et sisu on täidetud
         </p>
     </section>
     <section id = "Kast2">
